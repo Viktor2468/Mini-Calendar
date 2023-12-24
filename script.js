@@ -52,12 +52,6 @@ function renderCalendar() {
         currentYear === new Date().getFullYear()
       ) {
         days = days + `<div class="day today">${i}</div>`;
-      }else if(i === 31 && currentMonth === 11){
-        days = days + 
-        `<div class="day-holiday">
-          <div class="div-top">${i}</div>
-          <div class="div-bottom">Нова Година</div>
-        </div>`;
       }else if (i === 1 && currentMonth === 0) {
         days = days + 
         `<div class="day-holiday">
